@@ -29,29 +29,29 @@ If you don't have django installed for python 3 then run:
 And then:
 
     $ python3 -m django startproject \
-      --template=https://github.com/nikola-k/django-template/zipball/master \
+      --template=https://github.com/django_api/master \
       --extension=py,md \
-      <project_name>
+      django_api/
       
       
 After that just install the local dependencies, run migrations, and start the server.
 
 {% endif %}
 
-# {{ project_name|title }}
+# django_api
 
 # Getting Started
 
 First clone the repository from Github and switch to the new directory:
 
-    $ git clone git@github.com/USERNAME/{{ project_name }}.git
+    $ git clone git@github.com/dadianas/django_api.git
     $ cd {{ project_name }}
     
 Activate the virtualenv for your project.
     
 Install project dependencies:
 
-    $ pip install -r requirements/local.txt
+    $ pip install -r requirements.txt
     
     
 Then simply apply the migrations:
